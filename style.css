@@ -1,0 +1,35 @@
+.logo-cont img {
+    width: 50px;
+    height: 50px;
+}
+
+.header {
+    width: 80%;
+    margin: 5px auto;
+    max-width: 380px;
+}
+
+.main-text {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    line-height: 1.3125;
+}
+
+.sign-bn {
+    width: 350px;
+    height: 30px;
+    background-color: #3ba1f2;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.log-in {
+    width: 350px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 17px;
+    background-color: white;
+    color: #3ba1f2;
+    border: 1px solid #3ba1f2;
+}
