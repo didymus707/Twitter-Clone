@@ -32,4 +32,39 @@
 
 .row-2 {
     background-color: #71c9f8;
+    position: relative;
+    overflow: hidden;
+}
+
+.bird-bg {
+    position: relative;
+    z-index: 1;
+}
+
+.twt {
+    fill: #1da1f2;
+    width: 350px;
+    position: absolute;
+    top: -13vh;
+    right: -16vh;
+    height: 60vh;
+}
+
+.headsup {
+    max-width: 380px;
+    position: relative;
+    z-index: 100;
+}
+
+.s-fll {
+    display: flex;
+    align-items: flex-start;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.ppl,
+.chat {
+    fill: white;
+    width: 24px;
 }
