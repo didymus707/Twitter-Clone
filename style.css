@@ -68,3 +68,17 @@
     fill: white;
     width: 24px;
 }
+
+.foot-wrap {
+    background-color: #fff;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrap a {
+    color: #aab8c2;
+    font-size: 12px;
+}
