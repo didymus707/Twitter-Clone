@@ -43,11 +43,13 @@
 
 .twt {
     fill: #1da1f2;
-    width: 350px;
+    width: 365px;
     position: absolute;
-    top: -12vh;
-    right: -16vh;
-    height: 63vh;
+    top: -10vh;
+    right: -10vh;
+    height: 58vh;
+    max-width: none;
+    transform: translate(35px, -1%) rotate(4deg);
 }
 
 .headsup {
@@ -66,6 +68,7 @@
 /* second sign in area */
 .cta2 {
     padding: 30px 15px;
+    max-width: 380px;
 }
 
 .sgn,
