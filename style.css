@@ -45,9 +45,9 @@
     fill: #1da1f2;
     width: 350px;
     position: absolute;
-    top: -13vh;
+    top: -12vh;
     right: -16vh;
-    height: 60vh;
+    height: 63vh;
 }
 
 .headsup {
@@ -59,8 +59,20 @@
 .s-fll {
     display: flex;
     align-items: flex-start;
-    font-size: 16px;
+    font-size: 19px;
     line-height: 28px;
+}
+
+/* second sign in area */
+.cta2 {
+    padding: 30px 15px;
+}
+
+.sgn,
+.lgn {
+    width: 45%;
+    font-size: 15px;
+    padding: 0.6rem;
 }
 
 .ppl,
@@ -74,11 +86,11 @@
 }
 
 .wrap {
-    display: flex;
     flex-wrap: wrap;
+    line-height: 1.3125;
 }
 
 .wrap a {
-    color: #aab8c2;
-    font-size: 12px;
+    font-size: 13px;
+    color: #657786
 }
