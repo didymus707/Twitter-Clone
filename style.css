@@ -1,11 +1,15 @@
 .logo-cont img {
-    width: 50px;
-    height: 50px;
+    width: 42px;
+    height: 42px;
 }
 
 .header {
-    margin: 5px auto;
+    margin: 14px auto;
     max-width: 380px;
+}
+
+.join h3 {
+    font-size: 14px;
 }
 
 .main-text {
@@ -34,6 +38,7 @@
     background-color: #71c9f8;
     position: relative;
     overflow: hidden;
+    padding: 14px;
 }
 
 .bird-bg {
@@ -43,26 +48,28 @@
 
 .twt {
     fill: #1da1f2;
-    width: 365px;
     position: absolute;
-    top: -10vh;
-    right: -10vh;
-    height: 58vh;
-    max-width: none;
-    transform: translate(35px, -1%) rotate(4deg);
+    top: -12vh;
+    right: -13vh;
+    height: 60vh;
 }
 
 .headsup {
-    max-width: 380px;
     position: relative;
     z-index: 100;
+    padding: 14px 0;
 }
 
 .s-fll {
     display: flex;
     align-items: flex-start;
-    font-size: 19px;
+    font-size: 18px;
     line-height: 28px;
+    margin-bottom: 40px;
+}
+
+.mnon {
+    margin-bottom: 0;
 }
 
 /* second sign in area */
@@ -78,6 +85,7 @@
     padding: 0.6rem;
 }
 
+.sach,
 .ppl,
 .chat {
     fill: white;
@@ -93,7 +101,17 @@
     line-height: 1.3125;
 }
 
+.wrap li {
+    padding: 0.4rem;
+}
+
 .wrap a {
-    font-size: 13px;
+    font-size: 12px;
     color: #657786
+}
+
+@media screen and (min-width: 425px) {
+    .headsup {
+        max-width: 350px;
+    }
 }
