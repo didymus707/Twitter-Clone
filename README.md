@@ -22,23 +22,25 @@ Cloning Twitter Log Out Page using the css framework we built
 
 This collaborative project is the last of the series of projects in the HTML & CSS curriculum the students of microverse must complete in order to graduate in which the student must use the framework he/she built on a particular site of their choice.
 
-This project is a rebuild of [tnw](https://www.thenextweb.com/) site.
+This project is a rebuild of [twitter](https://www.twitter.com) site.
 
-Specs to the Project can be found [here](https://www.theodinproject.com/courses/html5-and-css3/lessons/building-with-responsive-design).
+Specs to the Project can be found [here](https://www.theodinproject.com/courses/html5-and-css3/lessons/design-your-own-grid-based-framework).
 
 ### Built With
 
 * HTML
 * CSS
+* SASS
 
 ### Things Learnt
 
 * Media Queries
+* Building own CSS frameworks
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Click on this [link](https://raw.githack.com/tzvaita/Responsive-site/master/index.html) to check out the live version of the project
+Click on this [link](https://raw.githack.com/didymus707/Twitter-Clone/working-branch/index.html) to check out the live version of the project
 
 
 <!-- CONTRIBUTING -->
@@ -61,7 +63,7 @@ Tennyson Zvaita - [@tennyzvaita
 
 Adewale Orotayo - [@didy707](https://twitter.com/didy707) - didymus7007@gmail.com
 
-Project Link: [Responsive Site](https://github.com/tzvaita/responsive-site).
+Project Link: [Twitter Clone](https://github.com/didymus707/Twitter-Clone).
 
 
 
