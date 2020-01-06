@@ -159,7 +159,9 @@
 
     .inp {
         background: #f5f8fa;
-        font: 400 13px Times;
+        font-weight: 400;
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
         outline: none;
         padding-bottom: 5px;
         padding-top: 2px;
@@ -203,4 +205,4 @@
     .wrap a {
         font-size: 13px;
     }
-}
+} 
