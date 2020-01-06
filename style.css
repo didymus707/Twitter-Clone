@@ -115,3 +115,86 @@
         max-width: 350px;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .lg-main {
+        height: 90vh;
+    }
+
+    .ryt-con {
+        flex-wrap: wrap;
+    }
+
+    .form {
+        position: relative;
+        top: 15px;
+        padding: 0 15px;
+    }
+
+    .dsg {
+        flex-direction: column;
+        border-bottom: 2px solid #657786;
+        background: #f5f8fa;
+        padding: 0 10px;
+    }
+
+    .span-name {
+        align-self: flex-start;
+    }
+
+    .span-name span {
+        color: #657786;
+        font-size: 13px;
+    }
+
+    .inp {
+        background: #f5f8fa;
+        font: 400 19px Arial;
+        outline: none;
+        padding-bottom: 5px;
+        padding-top: 2px;
+    }
+
+    .p-link {
+        position: relative;
+        top: 22px;
+        font-size: 13px;
+    }
+
+    .bttn {
+        border-radius: 1.5rem;
+        width: 83px;
+        background: none;
+        border: 1px solid #3ba1f2;
+        color: #3ba1f2;
+        padding: 0;
+        min-height: 39px;
+        height: 0;
+        margin: auto 0;
+    }
+    
+    .twt {
+        fill: #1da1f2;
+        position: absolute;
+        top: -62vh;
+        right: -52vh;
+        height: 160vh;
+    }
+
+    .row-2 {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .headsup {
+        align-self: center;
+    }
+
+    .wrap a {
+        font-size: 13px;
+    }
+
+    
+}

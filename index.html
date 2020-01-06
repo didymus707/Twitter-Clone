@@ -4,28 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://rawcdn.githack.com/didymus707/CSS-Framework/dc8260cf1c8e0b8988d765272d32ff4de5b67927/css/main.css">
+    <link rel="stylesheet" href="https://raw.githack.com/didymus707/CSS-Framework/contents/css/main.css">
     <link rel="stylesheet" href="style.css">
     <title>Twitter.com</title>
 </head>
 <body class="container">
-    <div class="row">
-        <div class="col-12">
-            <div class="header">
-                <div class="logo-cont">
-                    <img src="images/download.png" alt="twitter-logo">
-                </div>
-                <h1 class="main-text mt-3 mb-5">See what’s happening in the world right now</h1>
-                <div class="join">
-                    <h3 class="mb-2">Join Twitter today.</h3>
-                    <button class="sign-bn btn text-white mt-2 mb-2 p-2 bn">Sign up</button>
-                    <button class="log-in btn mt-2 mb-3 p-2 brand-color">Log in</button>
+    <div class="lg-main row">
+        <div class="ryt-con col-md-12 order-lg-2 col-lg-6 d-lg-flex">
+            <div class="cta d-none d-lg-block">
+                <form method="post" class="d-flex jc-spe form">
+                    <div class="username">
+                        <label for="name" class="dsg d-flex">
+                           <div class="span-name pt-2">
+                               <span>Phone, email or username</span>
+                           </div>
+                            <input type="text" id="name" class="bn inp">
+                        </label>
+                    </div>
+                    <div class="pword">
+                        <label for="pass" class="dsg d-flex">
+                            <div class="span-name pt-2">
+                                <span>Password</span>
+                            </div>
+                            <input type="text" id="pword" class="bn inp">
+                            <a href="#" class="p-link"><br>
+                                <span class="brand-color">Forgot password?</span>
+                            </a>
+                        </label>
+                    </div>
+                    <button class="bttn">Log In</button>
+                </form>
+            </div>
+            <div class="col-12">
+                <div class="header">
+                    <div class="logo-cont">
+                        <img src="images/download.png" alt="twitter-logo">
+                    </div>
+                    <h1 class="main-text mt-3 mb-5">See what’s happening in the world right now</h1>
+                    <div class="join">
+                        <h3 class="mb-2">Join Twitter today.</h3>
+                        <button class="sign-bn btn text-white mt-2 mb-2 p-2 bn">Sign up</button>
+                        <button class="log-in btn mt-2 mb-3 p-2 brand-color">Log in</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row mt-2 mb-2">
-        <div class="col-12 row-2">
+        <div class="col-12 row-2 order-lg-1 col-lg-6">
             <div class="bird-bg">
                 <svg viewBox="0 0 24 24" class="twt">
                     <g>
@@ -55,9 +79,7 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-12 d-flex jc-spa cta2 ml-auto mr-auto">
+        <div class="col-12 d-flex jc-spa cta2 ml-auto mr-auto d-lg-none">
             <button class="sign-bn sgn btn text-white p-2 bn">Sign up</button>
             <button class="log-in lgn btn p-2 brand-color">Log in</button>
         </div>
