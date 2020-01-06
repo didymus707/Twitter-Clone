@@ -11,8 +11,8 @@ a {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -36,12 +36,12 @@ a {
   color: $cothers;
 }
 
-.container, .container-fluid{
+.container, .container-fluid {
   width: $pcent;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
-  margin-left: auto
+  margin-left: auto;
 }
 
 .row {
@@ -73,7 +73,7 @@ a {
       #{$space-val}: $jc-val;
     }
   }
-};
+}
 
 @each $align-prop, $align-val in $align {
   @each $ali-prop, $ali-val in $spacing-value {
@@ -81,7 +81,7 @@ a {
       #{$align-val}: $ali-val; 
     }
   }
-};
+}
 
 @each $property, $value in $mg-pd {
   @each $size, $vals in $sizes{
@@ -94,7 +94,7 @@ a {
       }
     }
   }
-};
+}
 
 @for $n from 1 through $grid-cols {
   .col-#{$n} {
@@ -102,19 +102,19 @@ a {
     max-width: percentage($n/$grid-cols);
     padding: 0 15px;
   }
-};
+}
 
 @for $n from 1 through $grid-cols {
   .order-#{$n} {
     order: $n;
   }
-};
+}
 
 @mixin mq($breakpoint) {
   @media screen and (min-width: $breakpoint) {
     @content;
-  };
-};
+  }
+}
 
 @mixin dynamicCols($modifier, $grid-cols, $breakpoint) {
   @include mq($breakpoint) {
@@ -151,4 +151,4 @@ a {
 
 @each $modifier, $breakpoint in $screens {
   @include dynamicCols($modifier, $grid-cols, $breakpoint);
-};
+}
