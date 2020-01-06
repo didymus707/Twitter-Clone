@@ -107,7 +107,7 @@
 
 .wrap a {
     font-size: 12px;
-    color: #657786
+    color: #657786;
 }
 
 @media screen and (min-width: 425px) {
@@ -159,7 +159,7 @@
 
     .inp {
         background: #f5f8fa;
-        font: 400 13px Arial;
+        font: 400 13px Times;
         outline: none;
         padding-bottom: 5px;
         padding-top: 2px;
@@ -180,7 +180,7 @@
         height: 0;
         margin: auto 0;
     }
-    
+
     .twt {
         fill: #1da1f2;
         position: absolute;
@@ -203,6 +203,4 @@
     .wrap a {
         font-size: 13px;
     }
-
-    
 }
