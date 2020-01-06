@@ -136,6 +136,7 @@
         border-bottom: 2px solid #657786;
         background: #f5f8fa;
         padding: 0 10px;
+        height: 55px;
     }
 
     .span-name {
@@ -156,8 +157,6 @@
     }
 
     .p-link {
-        position: relative;
-        top: 22px;
         font-size: 13px;
     }
 
