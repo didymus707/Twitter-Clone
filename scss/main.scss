@@ -1,0 +1,154 @@
+@import 'reset';
+@import 'variables';
+
+html {
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.btn {
+  border-radius: 1.5rem;
+}
+
+.text-white {
+  color: $text-white;
+}
+
+.text-dark {
+  color: $text-dark;
+}
+
+.brand-color {
+  color: $brand-color;
+}
+
+.other-color {
+  color: $cothers;
+}
+
+.container, .container-fluid{
+  width: $pcent;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.bn {
+  border: none;
+}
+
+.bt {
+  border-top: 1px solid #e6ecf0;
+}
+
+@each $app-var, $app-prop in $appearance {
+  @each $appce-prop, $appce-val in $appearance-value {
+    .#{$app-var}-#{$appce-prop} {
+      #{$app-prop}: $appce-val;
+    }
+  } 
+}
+
+@each $space-prop, $space-val in $spacing {
+  @each $jc-prop, $jc-val in $spacing-value {
+    .#{$space-prop}-#{$jc-prop} {
+      #{$space-val}: $jc-val;
+    }
+  }
+};
+
+@each $align-prop, $align-val in $align {
+  @each $ali-prop, $ali-val in $spacing-value {
+    .#{$align-prop}-#{$ali-prop} {
+      #{$align-val}: $ali-val; 
+    }
+  }
+};
+
+@each $property, $value in $mg-pd {
+  @each $size, $vals in $sizes{
+    .#{$property}-#{$size} {
+      #{$value}: $vals;
+    }
+    @each $direction, $val in $directions {
+      .#{$property}#{$direction}-#{$size} {
+        #{$value}-#{$val}: $vals;
+      }
+    }
+  }
+};
+
+@for $n from 1 through $grid-cols {
+  .col-#{$n} {
+    flex: 0 0 percentage($n/$grid-cols);
+    max-width: percentage($n/$grid-cols);
+    padding: 0 15px;
+  }
+};
+
+@for $n from 1 through $grid-cols {
+  .order-#{$n} {
+    order: $n;
+  }
+};
+
+@mixin mq($breakpoint) {
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  };
+};
+
+@mixin dynamicCols($modifier, $grid-cols, $breakpoint) {
+  @include mq($breakpoint) {
+    @each $app-var, $app-prop in $appearance {
+      @each $appce-prop, $appce-val in $appearance-value {
+        .#{$app-var}-#{$modifier}-#{$appce-prop} {
+          #{$app-prop}: $appce-val;
+        }
+      } 
+    }
+    @for $n from 1 through $grid-cols {
+      .order-#{$modifier}-#{$n} {
+        order: $n;
+      }
+      .col-#{$modifier}-#{$n} {
+        flex: 0 0 percentage($n/$grid-cols);
+        max-width: percentage($n/$grid-cols);
+      }
+    }
+    @each $property, $value in $mg-pd {
+      @each $size, $vals in $sizes{
+        .#{$property}-#{$modifier}-#{$size} {
+          #{$value}: $vals;
+        }
+        @each $direction, $val in $directions {
+          .#{$property}#{$direction}-#{$modifier}-#{$size} {
+            #{$value}-#{$val}: $vals;
+          }
+        }
+      }
+    }
+  } 
+}
+
+@each $modifier, $breakpoint in $screens {
+  @include dynamicCols($modifier, $grid-cols, $breakpoint);
+};
